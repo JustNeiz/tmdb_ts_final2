@@ -4,16 +4,18 @@ import {useEffect} from "react";
 import MovieInfo from "../../components/MovieInfo/MovieInfo.tsx";
 import Zaglushka from "../../components/Zaglushka/Zaglushka.tsx";
 import css from './MoviePage.module.css'
+import {useSearchParams} from "react-router-dom";
 
 const MoviePage = () => {
+    const [params] = useSearchParams();
+    const data= useAppSelector(state => state.moviesResponse.byId);
     const dispatch = useAppDispatch();
     useEffect(() => {
         const fetchData = async () => {
-            await dispatch(moviesActions.getById('1011985'));
+            await dispatch(moviesActions.getById(params.get('movieId') as string));
         }
         fetchData()
     }, []);
-    const data= useAppSelector(state => state.moviesResponse.byId);
     const theme = localStorage.getItem('theme')
     const theme1 = useAppSelector(state => state.moviesResponse.darkTheme);
 

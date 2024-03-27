@@ -30,7 +30,6 @@ const  MainPage = () => {
     return (
         <div className={theme || theme1 ? css.MainPageDark : css.MainPage}>
             <MoviesList movieResponse={response}/>
-            <MoviesList movieResponse={response}/>
             <PaginationContainer total_pages={response.total_pages}/>
         </div>
     );
