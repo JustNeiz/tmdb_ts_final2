@@ -1,0 +1,13 @@
+.SearchBlock{
+    width: 15vw;
+    /*height: 3vh;*/
+    margin: 0 4vw;
+}
+.SearchBlock form{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.SearchBlock Button {
+    padding: 0;
+}

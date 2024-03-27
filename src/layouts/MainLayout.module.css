@@ -1,0 +1,18 @@
+
+.MainLayout{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--light_back);
+    min-height: 100vh;
+}
+.MainLayoutDark{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark_back);
+    color: #899b0c;
+    min-height: 100vh;
+
+
+}

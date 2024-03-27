@@ -1,0 +1,62 @@
+.MoviesListCardContainer{
+    width: 15vw;
+    margin: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    backdrop-filter: blur(5px);
+
+}
+.MoviesListCardContainer h6{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    margin: 0;
+}
+.MoviesListCard{
+    width: 15vw;
+    display: flex;
+    height: 40vh;
+    cursor: pointer;
+
+    flex-direction: column;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    justify-content: space-between;
+
+
+
+
+}
+.MoviesListCard span{
+    font-size: 14px;
+    /*color: white;*/
+}
+.MoviesListCard:hover .Title{
+    opacity: 100;
+    transition: 500ms;
+}
+.Title{
+    height: 25%;
+    opacity: 0;
+    transition: 500ms;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: white;
+    line-height: 80%;
+
+}
+.Stars{
+    opacity: 0;
+    transition: 500ms;
+}
+.MoviesListCard:hover .Stars{
+    opacity: 1;
+    transition: 500ms;
+}

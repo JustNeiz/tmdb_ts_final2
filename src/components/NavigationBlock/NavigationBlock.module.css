@@ -1,0 +1,8 @@
+.NavigationBlock{
+    display: flex;
+    margin: 0 5vw;
+    align-items: center;
+}
+.NavigationBlock span{
+    margin: 0;
+}
